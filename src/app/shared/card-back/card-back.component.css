@@ -1,0 +1,8 @@
+.card {
+  background-image: url("../../../assets/images/bg-card-back.png");
+  height: 190px;
+  width: 300px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}

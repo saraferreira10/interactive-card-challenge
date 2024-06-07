@@ -1,0 +1,18 @@
+<div
+  class="card absolute top-[9.5rem] z-30 text-light-grayish-violet p-6 py-9 flex flex-col justify-between lg:top-0"
+>
+  <div class="flex items-center gap-3">
+    <div class="h-10 w-10 rounded-full bg-white"></div>
+    <div class="h-5 w-5 rounded-full border border-white"></div>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <div class="font-semibold text-xl">
+      <p>{{ form.cardNumber }}</p>
+    </div>
+    <div class="flex justify-between">
+      <small>{{ form.cardHolder }}</small>
+      <small>{{ form.expDate?.month }}/{{ form.expDate?.year }}</small>
+    </div>
+  </div>
+</div>

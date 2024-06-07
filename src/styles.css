@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@layer components {
+  .btn-primary {
+    @apply w-full bg-very-dark-violet h-12 rounded-lg text-white md:h-20 md:text-xl lg:h-14 lg:text-base;
+  }
+  .input {
+    @apply py-3 px-4 border rounded-md border-light-grayish-violet focus:outline-from-gradient;
+  }
+  .input_group {
+    @apply flex flex-col gap-2;
+  }
+  .label {
+    @apply text-very-dark-violet font-semibold tracking-widest text-base;
+  }
+}
